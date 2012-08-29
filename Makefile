@@ -1,8 +1,8 @@
 test:
-	@./node_modules/.bin/mocha
+	@./node_modules/.bin/mocha \
 		--reporter spec \
 		--bail \
-		--timeout 30s \
+		--timeout 5s \
 		--require test/common.js
 
 .PHONY: test
