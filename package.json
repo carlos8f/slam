@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Pure node benchmarker alternative to ab or siege",
   "main": "./lib",
-  "bin": "./bin/slam.js",
+  "bin": "./bin/slam",
   "scripts": {
     "test": "make test"
   },

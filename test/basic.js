@@ -21,7 +21,7 @@ describe('basic test', function () {
   it('can slam the server', function (done) {
     var output = '';
 
-    var slam = execFile(resolve(__dirname, '../bin/slam.js'), ['-t', '2s', 'http://localhost:' + port + '/']);
+    var slam = execFile(resolve(__dirname, '../bin/slam'), ['-t', '2s', 'http://localhost:' + port + '/']);
 
     slam.stdout.on('data', function (chunk) {
       output += chunk;
@@ -31,7 +31,7 @@ describe('basic test', function () {
     });
 
     slam.once('close', function () {
-      assert(output.match(/slam\.js v[\d\.]+/));
+      assert(output.match(/slam v[\d\.]+/));
       assert(output.match(/slamming http:\/\/localhost:\d+\/ x10 for 2s\.{3}/));
 
       var match = output.match(/([\d\.]+) trans\/sec/);
@@ -45,7 +45,7 @@ describe('basic test', function () {
 
       var failed = parseFloat(match[1]);
       assert.equal(failed, 0);
-      
+
       done();
     });
   });

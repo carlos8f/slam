@@ -21,7 +21,7 @@ describe('json', function () {
   it('outputs json', function (done) {
     var output = '';
 
-    var slam = execFile(resolve(__dirname, '../bin/slam.js'), ['-t', '2s', '--json', 'http://localhost:' + port + '/']);
+    var slam = execFile(resolve(__dirname, '../bin/slam'), ['-t', '2s', '--json', 'http://localhost:' + port + '/']);
 
     slam.stdout.on('data', function (chunk) {
       output += chunk;

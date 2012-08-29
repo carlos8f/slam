@@ -17,7 +17,7 @@ Usage
 
 ```
 
-  Usage: slam.js [options] url
+  Usage: slam [options] url
 
   Options:
 
@@ -36,7 +36,7 @@ Sample output
 ### text
 
 ```
-slam.js v0.0.0
+slam v1.0.1
 Tue Aug 28 2012 18:13:03 GMT-0700 (PDT)
 
 slamming http://localhost:8080/README.md x5 for 10s...
