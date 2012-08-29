@@ -3,6 +3,8 @@ slam
 
 Pure node benchmarker alternative to `ab` or `siege`
 
+[![build status](https://secure.travis-ci.org/carlos8f/slam.png)](http://travis-ci.org/carlos8f/slam)
+
 Install
 -------
 
