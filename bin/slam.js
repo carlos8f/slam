@@ -7,6 +7,7 @@ var program = require('commander')
   .option('-c, --concurrency <num>', 'level of concurrency (default: 10)', Number, 10)
   .option('-t, --time <seconds>', 'length of benchmark (default: 30)', Number, 30)
   .option('-o, --out <outfile>', 'write results to a file')
+  .option('--json', 'output a json representation of the data')
   .parse(process.argv)
 
 if (!program.args[0]) {
