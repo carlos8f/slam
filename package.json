@@ -1,6 +1,6 @@
 {
   "name": "slam",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Pure node benchmarker alternative to ab or siege",
   "main": "./lib",
   "bin": "./bin/slam.js",
