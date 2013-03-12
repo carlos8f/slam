@@ -1,12 +1,12 @@
 #!/usr/bin/env node
-var version = require(require('path').resolve(__dirname, '../package.json')).version
+var pkgInfo = require(require('path').resolve(__dirname, '../package.json'))
 
 function parseTime (str) {
   return parseInt(str.replace(/s$/, ''), 10);
 }
 
 var program = require('commander')
-  .version(version)
+  .version(pkgInfo.version)
   .usage('[options] url')
   .option('-c, --concurrency <num>', 'level of concurrency (default: 10)', Number, 10)
   .option('-t, --time <seconds>', 'length of benchmark (default: 30)', parseTime, 30)
@@ -20,7 +20,8 @@ if (!program.args[0]) {
 }
 
 program.url = program.args[0];
-program.version = version;
+program.name = pkgInfo.name;
+program.version = pkgInfo.version;
 
 require('../')(program, function (err) {
   if (err) {
