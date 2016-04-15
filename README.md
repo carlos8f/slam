@@ -75,6 +75,12 @@ Shortest transaction:          0.00
 }
 ```
 
+---
+
+## Thanks
+
+Thanks to [@jokeyrhyme](https://github.com/jokeyrhyme) for custom header support.
+
 - - -
 
 ### Developed by [Terra Eclipse](http://www.terraeclipse.com)
