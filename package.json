@@ -23,8 +23,8 @@
   "author": "Carlos Rodriguez",
   "license": "MIT",
   "dependencies": {
-    "commander": "~1.0.2",
-    "idgen": "~1.1.1"
+    "commander": "~2.9.0",
+    "idgen": "~2.0.2"
   },
   "devDependencies": {
     "mocha": "*"
