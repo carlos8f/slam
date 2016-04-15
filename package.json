@@ -24,7 +24,8 @@
   "license": "MIT",
   "dependencies": {
     "commander": "~2.9.0",
-    "idgen": "~2.0.2"
+    "idgen": "~2.0.2",
+    "minimist": "^1.2.0"
   },
   "devDependencies": {
     "mocha": "*"

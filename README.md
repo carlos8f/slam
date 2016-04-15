@@ -25,6 +25,7 @@ Usage
     -V, --version            output the version number
     -c, --concurrency <num>  level of concurrency (default: 10)
     -t, --time <seconds>     length of benchmark (default: 30)
+    -H, --header <header>    send a custom HTTP header (repeatable)
     -o, --out <outfile>      write results to a file
     --json                   output a json representation of the data
 
