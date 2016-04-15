@@ -21,7 +21,7 @@ describe('basic test', function () {
   it('can slam the server', function (done) {
     var output = '';
 
-    var slam = execFile(resolve(__dirname, '../bin/slam'), ['-t', '2s', 'http://localhost:' + port + '/']);
+    var slam = execFile(resolve(__dirname, '../bin/slam'), ['-t', '2s', '-H', 'User-Agent: slam', 'http://localhost:' + port + '/']);
 
     slam.stdout.on('data', function (chunk) {
       output += chunk;
